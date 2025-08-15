@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Details – BOC & Ez Cash</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://th.bing.com/th/id/R.0eea55b3c3cd74abe5f94a82de63bd2b?rik=x28JNmbtOSgQyw&riu=http%3a%2f%2fpixelstalk.net%2fwp-content%2fuploads%2f2015%2f06%2fCute-Anime-Girl-Wallpaper-Full-HD.jpg&ehk=u5%2f90LGFtrR0XHUny7cxtPSX%2bngtzha4vA6n6Y8SZtA%3d&risl=&pid=ImgRaw&r=0') center center / cover no-repeat fixed;
+      overflow-x: hidden;
+      animation: fadeInBody 2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 40px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      border: 4px solid transparent;
+      animation: glowBorder 3s infinite alternate, slideUp 1.2s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    @keyframes glowBorder {
+      from { border-color: #ff99cc; box-shadow: 0 0 10px #ff99cc; }
+      to { border-color: #ff66b2; box-shadow: 0 0 20px #ff66b2; }
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      color: #cc0066;
+      margin-bottom: 30px;
+      font-size: 32px;
+      animation: glowText 2s infinite alternate;
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #ff99cc; }
+      to { text-shadow: 0 0 20px #ff66b2; }
+    }
+
+    .bank-info, .ezcash-info, .note, .contact, .topup-button {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeInSection 1s ease-in-out forwards;
+    }
+
+    .bank-info { animation-delay: 0.5s; }
+    .ezcash-info { animation-delay: 0.8s; }
+    .note { animation-delay: 1.1s; }
+    .contact { animation-delay: 1.4s; }
+    .topup-button { animation-delay: 1.7s; }
+
+    @keyframes fadeInSection {
+      to { opacity: 1; }
+    }
+
+    .label {
+      font-weight: bold;
+      color: #cc0066;
+    }
+
+    .note {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .contact {
+      font-size: 16px;
+      color: #444;
+    }
+
+    .topup-button a {
+      text-decoration: none;
+      background-color: #cc0066;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #ff99cc;
+      display: inline-block;
+    }
+
+    .topup-button a:hover {
+      background-color: #ff66b2;
+      box-shadow: 0 0 20px #cc0066;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Details</h1>
+
+    <div class="bank-info">
+      <div><span class="label">Bank:</span> Bank of Ceylon (BOC)</div>
+      <div><span class="label">Account Number:</span> 81404240</div>
+      <div><span class="label">Account Name:</span> ANOJAN</div>
+    </div>
+
+    <div class="ezcash-info">
+      <div><span class="label">Ez Cash Number:</span> 0769791465</div>
+      <div><span class="label">Account Name:</span> ANOJAN</div>
+    </div>
+
+    <div class="note">
+      💡 Please use one of the above methods to send your payment. After completing the transaction, send your payment proof to confirm.
+    </div>
+
+    <div class="contact">
+      📞 Contact: 0750191513<br>
+      📱 WhatsApp available
+    </div>
+
+    <div class="topup-button">
+      <a href="boc.html">TOPUP</a>
+    </div>
+  </div>
+</body>
+</html>
